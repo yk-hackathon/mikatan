@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container">
+		<Label id="lblSetting" text="設定画面" />
+	</Window>
+</Alloy>

@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container">
+		<Label id="lblToday"></Label>
+		<Label id="label">今日は何する？</Label>
+		<Button id="btnGo" onClick="openNext" title="タップしてね" />
+	</Window>
+</Alloy>

@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container">
+			<Label id="lblDochi">どっち？</Label>
+	</Window>
+</Alloy>
