@@ -48,7 +48,7 @@ $.choise_3.image = data[choise][2]["image"];
 
 
 function openNext(e) {
-    var setting = Alloy.createController('select_1').getView();
+    var excute = Alloy.createController('excute').getView();
     //setting.openWindow({animated: true});
-    Ti.App.NavigationRootView.openWindow(setting);
+    Ti.App.NavigationRootView.openWindow(excute);
 }

@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container">
+		<Label id="lblToday" text="今日はコレ！"></Label>
+		<ImageView id="btnGo" onClick="openNext" title="おわったよ！" />
+	</Window>
+</Alloy>

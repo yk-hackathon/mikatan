@@ -1,0 +1,41 @@
+".container": {
+	backgroundColor:"pink"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+"#lblToday": {
+	top: 5,
+	left: 10
+}
+
+"#btnGo": {
+	bottom: 10
+}
+
+"#mikatanArea": {
+	backgroundColor: "pink",
+	height: Ti.UI.SIZE
+}
+
+"#baloon": {
+	top: 0,
+	height: 80,
+	image:"index/baloon.png"
+}
+
+"#mikatan": {
+	top: 60,
+	height: 300,
+	left: 70,
+	image:"shared/mikatan_1.png"
+}
+
+"#btnGo": {
+	image: "excute/btn-complete.png",
+	width: "100%",	
+	botoom: 0,
+}

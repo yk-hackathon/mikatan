@@ -9,8 +9,8 @@ function __processArg(obj, key) {
 
 function Controller() {
     function openNext() {
-        var setting = Alloy.createController("select_1").getView();
-        Ti.App.NavigationRootView.openWindow(setting);
+        var excute = Alloy.createController("excute").getView();
+        Ti.App.NavigationRootView.openWindow(excute);
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "select_2";
