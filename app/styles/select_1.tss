@@ -24,7 +24,7 @@
 "#baloon": {
 	top: 0,
 	height: 80,
-	image:"index/baloon.png"
+	image:"select/baloon_1.png"
 }
 
 "#mikatan": {
@@ -32,4 +32,18 @@
 	height: 300,
 	left: 70,
 	image:"shared/mikatan_1.png"
+}
+
+"#upperBody": {
+	image:"select/btn-upper_body.png",
+	width: "50%",
+	left: 0,
+	bottom: 0,
+}
+
+"#lowerBody": {
+	image:"select/btn-lower_body.png",
+	width: "50%",
+	bottom:0,
+	right: 0,
 }
