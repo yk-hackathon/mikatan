@@ -10,31 +10,25 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
-Ti.App.iOS.cancelAllLocalNotifications();
-var notifications = [];
-notification_params = {
-      alertBody: 'こんにちは、こんにちは',
-      alertAction: 'OK',
-      userInfo: {
-        data: {param1:'これはparam1', param2:'これはparam2'}
-      },
-      sound: 'sound.mp3',
-      repeat: 'daily',
-      date: new Date((new Date()).getTime() +(1000 * 10))
-    };
-notifications.push(Ti.App.iOS.scheduleLocalNotification(notification_params));
-
 var db = Ti.Database.open('mikatan');
 //db.execute("DROP TABLE alerts");
-db.execute("DROP TABLE users");
+//db.execute("DROP TABLE users");
+//db.execute("DROP TABLE record_date");
 
 //通知時間設定
 db.execute('CREATE TABLE IF NOT EXISTS alerts(alert_id INTEGER PRIMARY KEY AUTOINCREMENT, hours INTEGER, minutes INTEGER);');
 //ユーザー情報設定
 db.execute('CREATE TABLE IF NOT EXISTS users(user_id INTEGER PRIMARY KEY AUTOINCREMENT, nickname string, start_date string);');
-//サンプルデータ用
-db.execute("INSERT INTO users (nickname, start_date) VALUES ('さんぷるゆーざー1', '2015/01/31');");
+//やったことの記録
+db.execute('CREATE TABLE IF NOT EXISTS records(record_id INTEGER PRIMARY KEY AUTOINCREMENT, record_date date);');
 
+//サンプルデータ用
+db.execute("INSERT INTO users (nickname, start_date) VALUES ('さんぷるゆーざー1', '2015/01/27');");
+
+var sql = "INSERT INTO records (record_date) VALUES ('2015/01/28')";
+db.execute(sql);
+var sql = "INSERT INTO records (record_date) VALUES ('2015/01/29')";
+db.execute(sql);
 /*
 var sql = "SELECT * FROM users";
 var rows = db.execute(sql);
@@ -48,8 +42,6 @@ var rowUser = db.execute("SELECT start_date FROM users WHERE user_id=1");
 var start_date = rowUser.field(0);
 Ti.App.Properties.setString('start_date', start_date);
 
-//やったことの記録
-db.execute('CREATE TABLE IF NOT EXISTS records(record_id INTEGER PRIMARY KEY AUTOINCREMENT, record_date date);');
 
 var alerts = db.execute("SELECT * FROM alerts;");
 db.close();
