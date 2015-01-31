@@ -24,6 +24,12 @@ notification_params = {
     };
 notifications.push(Ti.App.iOS.scheduleLocalNotification(notification_params));
 
+var db = Ti.Database.open('mikatan');
+//db.execute("DROP TABLE alerts");
+db.execute('CREATE TABLE IF NOT EXISTS alerts(alert_id INTEGER PRIMARY KEY AUTOINCREMENT, hours INTEGER, minutes INTEGER);');
+var alerts = db.execute("SELECT * FROM alerts;");
+db.close();
+
 /*
 exports.iosStartWorkPush = function(popTime) {
 	notification = Ti.App.iOS.scheduleLocalNotification({

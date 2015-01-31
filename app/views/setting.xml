@@ -1,5 +1,9 @@
 <Alloy>
 	<Window class="container">
 		<Label id="lblSetting" text="設定画面" />
+		
+		<Picker id="pickerTime" top="50" selectionIndicator="true" useSpinner="true" type="Ti.UI.PICKER_TYPE_TIME"></Picker>
+        
+        <Button id="btnSetting" title="設定">
 	</Window>
 </Alloy>
