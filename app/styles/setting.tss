@@ -1,4 +1,11 @@
-
 ".container" : {
-  backgroundColor:"white"
+	backgroundColor: "#FFB6C1"
+}
+
+"#lblSetting": {
+	top:10
+}
+
+"#btnSetting": {
+	bottom: 5
 }

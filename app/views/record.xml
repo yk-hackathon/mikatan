@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container">
+		<Label id="lblMessage">今日もがんばりました</Label>
+		<ImageView id="imgRecord" image="sheet.png" />
+		<ImageView id="imgMikatan" image='mikatan_finish.png' />
+		<ImageView id="imgHukidashi" image='hukidashi_tweet.png' />
+	</Window>
+</Alloy>
