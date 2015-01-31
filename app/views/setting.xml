@@ -4,6 +4,6 @@
 		
 		<Picker id="pickerTime" top="50" selectionIndicator="true" useSpinner="true" type="Ti.UI.PICKER_TYPE_TIME"></Picker>
         
-        <Button id="btnSetting" title="設定">
+        <Button id="btnSetting" title="設定"></Button>
 	</Window>
 </Alloy>

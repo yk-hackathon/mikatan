@@ -1,7 +1,12 @@
 <Alloy>
-	<Window class="container">
-		<Label id="lblToday"></Label>
-		<Label id="label">今日は何する？</Label>
-		<Button id="btnGo" onClick="openNext" title="タップしてね" />
-	</Window>
+	<NavigationWindow id="index" platform="ios">
+		<Window class="container">
+			<Label id="lblToday" text="1日目"></Label>
+			<View id="mikatanArea" onClick="clickMikatan">
+				<ImageView id="baloon"></ImageView>
+				<ImageView id="mikatan"></ImageView>
+			</View>
+			<Button id="btnGo" onClick="openNext" title="タップしてね" />
+		</Window>
+	</NavigationWindow>
 </Alloy>

@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="select" class="container">
+		<View id="mikatanArea">
+			<ImageView id="baloon"></ImageView>
+			<ImageView id="mikatan"></ImageView>
+		</View>
+		<ImageView id="choise_1" onClick="openNext"></ImageView>
+		<ImageView id="choise_2" onClick="openNext"></ImageView>
+		<ImageView id="choise_3" onClick="openNext"></ImageView>
+	</Window>
+</Alloy>
